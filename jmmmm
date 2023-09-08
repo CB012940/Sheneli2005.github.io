@@ -1,0 +1,42 @@
+
+
+
+
+
+Experience the thrill of guided safaris, where you'll witness the majesty of African wildlife in its natural habitat.
+Our expert guides will lead you on unforgettable encounters with elephants, lions, giraffes, and more, as you
+uncover the secrets of the animal kingdom.
+
+<section class="Restaurants">
+    <h1>Restaurants</h1>
+    <b><p>This is the information given above.</p></b>
+    <div class="row">
+        <img src="images/noodlesgrand.png">
+        <h3>Noodles</h3>
+        <p>This Restaurant specailses in Noodles.</p>
+                <section class="hero">
+                 <a id="menu-link" href="menu.html" target="_blank">
+                <img img src="images/menu.logo.webp" alt="Menu Image">
+                </a>
+                </section>
+               
+
+                <footer>
+                <!-- Your footer content here -->
+                <P>above here is the menu of the restayrant one </P>
+                </footer>
+                </body>
+                </html>
+
+                </div>
+                    <div class="row">
+                    <img src="images/cheerspub.png">
+                    <h3>CheersPub</h3>
+                    <p>This Restaurant specailses in Noodles.</p>
+                </div>
+                <div class="row">
+                <img src="images/longefng.png">
+                <h3>LongFeng</h3>
+                <p>This Restaurant specailses in Noodles.</p>
+                </div>
+                </section>
