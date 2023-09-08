@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, inital scale=1.0">
+    <title>Paradise Restaurant and Hotel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styleEvent.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="Eventstyle.css">
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png.png" ></a>
+            <div class="nav-links">
+                <i class="fa fa-times" onclick="hideMenue()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="hotelbranches.html">HOTEL BRANCHES</a></li>
+                    
+                    <li><a href="Adventures.html">ADVENTURES</a></li> 
+                <div class="dropdown">
+                    <li><button class="dropbtn"><a href="Restaurants.html">RESTAURANTS</a></button></li>
+                    <div class="dropdown-content">
+                        <a href="Event1.html">Event1</a>
+                        <a href="Event2.html">Event2</a>
+                    </div>
+                </div>   
+                <div class="dropdown2"> 
+                    <li><button class="dropbtn1"><a href="hotelbooking.html">BOOKING</a></button></li>
+                    <div class="dropdown-content2">
+                        <a href="hotelbooking.html">Hotel Booking</a>
+                        <a href="Adventurebooking.html">Adventure Booking</a>
+                    </div>
+                </div>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1>Paradise</h1>
+
+        <b><p>Searching for a while place to have fun and relax!!<br> well this is the perfect place to have your vactions, filled with fun
+        adventures and activities.we have wonderful things to do such as
+        partying, safari rides and camping and can explore more stuff.</p></b>
+
+        <a href="About.html" class="hero-btn">About us</a>
+    </div>
+    </section>
+    
+    <!--------HotelBranches2---
+    
+      <div class="scroll-container">
+          <div class="scroll-item">
+              <img src="images/bigpool.png.jpg" alt="Image 1">
+              <div class="content1">
+                  <h2>Image 1 Title</h2>
+                  <b><p>Welcome to our Colombo branch,where modern luxury meets the pulse of the city. Situated in the heart of downtown, our branch offers a vibrant escape for travelers
+                      seeking both convenience and comfort.Welcome to our Negombo branch,<br>Experience the energy of the urban landscape while enjoying our impeccable service and contemporary amenities.rom stylish accommodations to exceptional dining options.</p></b>
+              </div>
+          </div>
+          <div class="scroll-item">
+              <img src="images/pooool.png" alt="Image 2">
+              <div class="content">
+                  <h2>Image 2 Title</h2>
+                  <p>Welcome to our Negombo branch,nestled along the picturesque shores of Negombo. Escape the everyday and immerse yourself in the soothing embrace of the ocean breeze 
+                  and breathtaking views. Our branch offers a serene retreat where<br>relaxation and rejuvenation are a way of life. Experience coastal luxury through elegantly appointed rooms,<br>
+                  oceanfront dining, and a range of leisure activities.</p>
+              </div>
+          </div>
+          <div class="scroll-item">
+              <img src="images/roompool.png" alt="Image 3">
+              <div class="content">
+                  <h2>Image 3 Title</h2>
+                  <p>Welcome to our Galle branch, perched amidst the majestic peaks of Paradise.Embrace the enchanting beauty of nature from every corner of our branch,wherepanoramic views and alpine charm await.Whether you're seeking adventure
+                   on the trails or a peaceful escape in cozy accommodations,our branch offers a perfect blend of excitement and relaxation</p>
+              </div>
+          </div>
+      </div> --->
+  
+      <!-- Navigation buttons 
+      <div class="nav-button1 prev-button1" onclick="scrollToPrev()">&#10094; Prev</div>
+      <div class="nav-button1 next-button1" onclick="scrollToNext()">Next &#10095;</div>
+  
+      <script>
+          let currentIndex = 0;
+          const scrollContainer = document.querySelector('.scroll-container');
+  
+          function scrollToPrev() {
+              if (currentIndex > 0) {
+                  currentIndex--;
+                  updateScroll();
+              }
+          }
+  
+          function scrollToNext() {
+              if (currentIndex < 2) {
+                  currentIndex++;
+                  updateScroll();
+              }
+          }
+  
+          function updateScroll() {
+              const scrollPosition = currentIndex * 50;
+              scrollContainer.style.transform = `translateX(-${scrollPosition}%)`;
+          }
+      </script> --->
+ 
+    <!--------HotelBranches------->
+
+    <section class="HotelBranches">
+        <h1>Hotel Branches</h1>
+        <div class="container">
+          <input type="text" class="hover-trigger" placeholder="Colombo Branch" disabled>
+            Welcome to our Colombo branch,where modern luxury meets the pulse of the city.
+            Situated in the heart of downtown, our branch offers a vibrant escape for travelers
+            seeking both convenience and comfort.Welcome to our Negombo branch,Experience
+            the energy of the urban landscape while enjoying our impeccable service and contemporary
+            amenities.rom stylish accommodations
+            to exceptional dining options.
+          <div class="popup">
+              <img src="images/pooool.png" alt="Popup Image">
+          </div>
+        </div>
+        <div class="container">
+          <input type="text" class="hover-trigger" placeholder="Negombo Branch" disabled>
+          Welcome to our Negombo branch,nestled along the picturesque shores of Negombo.
+        Escape the everyday and immerse yourself in the soothing embrace of the ocean breeze
+        and breathtaking views. Our branch offers a serene retreat where relaxation and rejuvenation
+        are a way of life. Experience coastal luxury through elegantly appointed rooms,
+        oceanfront dining, and a range of leisure activities.
+          <div class="popup">
+              <img src="images/pool.png.jpg" alt="Popup Image">
+          </div>
+        </div>
+        <div class="container">
+          <input type="text" class="hover-trigger" placeholder="Galle Branch" disabled>
+          Welcome to our Galle branch, perched amidst the majestic peaks of Paradise.Embrace the
+        enchanting beauty of nature from every corner of our branch, where panoramic views and
+        alpine charm await. Whether you're seeking adventure on the trails or a peaceful escape in
+        cozy accommodations, our branch offers a perfect blend of excitement and relaxation
+          <div class="popup">
+              <img src="images/pool.png" alt="Popup Image">
+          </div>
+        </div>
+</section>
+
+<!--------HotelBranches02-->
+<section>
+  <h3 class="text">Hotel Branches</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Branch</th>
+          <th>Image</th>
+          <th>Map</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Colombo Branch</td>
+          <td><img src="images/pooool.png" alt="Branch 1" class="branch-image"></td>
+          <td><iframe src="https://www.google.com/search?q=colombo+in+google+maps&rlz=1C1CHZN_enLK1026LK1026&oq=colombo+in+google+maps&aqs=chrome..69i57.5552j0j7&sourceid=chrome&ie=UTF-8#" frameborder="0" class="map" allowfullscreen></iframe></td>
+      </tr>
+      <tr>
+          <td>Negombo Branch</td>
+          <td><img src="images/pool.png.jpg" alt="Branch 2" class="branch-image"></td>
+          <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2dLongitude2!3dLatitude2!4f1!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zLong2itude2!5e0!3m2!1sen!2sus!4v1623925282034!5m2!1sen!2sus" frameborder="0" class="map" allowfullscreen></iframe></td>
+      </tr>
+      <tr>
+          <td>Galle Branch</td>
+          <td><img src="images/pool.png" alt="Branch 3" class="branch-image"></td>
+          <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2dLongitude3!3dLatitude3!4f1!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zLong3itude3!5e0!3m2!1sen!2sus!4v1623925282034!5m2!1sen!2sus" frameborder="0" class="map" allowfullscreen></iframe></td>
+      </tr>
+  </tbody>
+</table>
+</section>
+
+<!--------Adventures------->
+
+<section class="Adventures">
+    <h1>Adventures</h1>
+    <p>Welcome to Adventures introduced by Paradise Hotel, this is considred Paradise Hotel's newest feature.<br> where you can enjoy and have fun with your family and friends.</p>
+<div class="row">
+    <div class="Adventuress">
+        <img class="image" src="images/safarii.png.jpg">
+        <div class="Layer">
+            <h3>SAFARI</h3>
+            <b><p>Experience the thrill of guided safaris, where you'll witness the majesty of African wildlife in its natural habitat.<br>
+                Our expert guides will lead you on unforgettable encounters with elephants, lions, giraffes, and more, as you<br> uncover the secrets of the animal kingdom. 
+                Relax on your private terrace, listening to the sounds of the wild under the starlit sky.</p></b>
+            </div>
+    </div>
+
+    <div class="Adventuress">
+        <img class="image" src="images/hikingimages.png">
+        <div class="Layer">
+            <h3>HIKING</h3>
+            <b><p>Set out on well-marked trails that wind through ancient forests, cascade down mountain slopes, and unveil breathtaking vistas. Choose your challenge – from leisurely nature walks to exhilarating summit hikes,
+                our surroundings offer a trail for every adventure.</p></b>
+        </div>
+    </div>
+
+    <div class="Adventuress">
+        <img class="image" src="images/livemusic.png">
+        <div class="Layer">
+            <h3>LIVE MUSIC</h3>
+            <b><p> our hotel comes alive with the magic of live performances. Local and guest artists take the stage,
+             weaving a tapestry of musical genres that cater to every taste. Whether you're drawn to acoustic melodies,
+            jazz improvisations, or energetic pop hits, our lineup offers a diverse musical journey.</p></b>
+            
+        </div>
+    </div>
+</div>
+</section>
+
+<!-------restaurant part 2------>
+
+<section class="restaurant" id="restaurant1">
+    <div class="restaurant-info">
+      <h2>CHEERS PUB</h2><br><br>
+      <img src="images/cheerspub.png" alt="cheerspub"><br><br>
+      <p>Discover the essence of culinary craft and the allure of fine
+          spirits at cheerspub,where the art of dining is elevated to a realm of pure indulgence.</p>
+      <a href="menu1.html" class="menu-link">View Menu</a>
+    </div>
+  </section>
+  
+  <section class="restaurant" id="restaurant2">
+    <div class="restaurant-info">
+      <h2>LONG FENG</h2><br><br>
+      <img src="images/longefng.png" alt="LongFeng"><br><br>
+      <p>Welcome to the LongFeng, a sanctuary of elegance where the rich tapestry of Chinese cuisine
+       is woven with the threads of luxury. Step into a realm where traditional flavors meet modern sophistication,
+      and every dish is a masterpiece that tells a story of centuries-old culinary heritage.</p>
+      <a href="menu2.html" class="menu-link">View Menu</a>
+    </div>
+  </section>
+  
+  <section class="restaurant" id="restaurant3">
+    <div class="restaurant-info">
+      <h2>NOODLES</h2><br><br>
+      <img src="images/noodlesgrand.png" alt="Noodles"><br><br>
+      <p>Indulge in a meticulously curated selection of noodle dishes that pay homage to culinary 
+      traditions from around the world. From the velvety strands of our hand-pulled noodles to the 
+      delicate perfection of our rice noodles, each dish is a celebration of texture, taste, and creativity.</p>
+      <a href="menu3.html" class="menu-link">View Menu</a>
+    </div>
+  </section>
+  
+  <script src="script.js"></script>
+
+
+    <!---sliding images---->
+
+<div class="slider">
+  <div class="slide-container">
+    <div class="slide">
+      <img src="images/photo4.png" alt="Image 1">
+      <div class="caption">
+        <h2>Image 1 Title</h2>
+        <p>Description for Image 1.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="images/photo3.png" alt="Image 2">
+      <div class="caption">
+        <h2>Image 2 Title</h2>
+        <p>Description for Image 2.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="images/photo2.png" alt="Image 3">
+      <div class="caption">
+        <h2>Image 3 Title</h2>
+        <p>Description for Image 3.</p>
+      </div>
+      <div class="slide">
+        <img src="images/photo1.png" alt="Image 4">
+        <div class="caption">
+          <h2>Image 4 Title</h2>
+          <p>Description for Image 3.</p>
+        </div>
+    </div>
+  </div>
+</div>
+<script src="script.js">// JavaScript to adjust animation duration based on slide count
+    const slideContainer = document.querySelector('.slide-container');
+    const slideCount = slideContainer.childElementCount;
+    const animationDuration = slideCount * 10; // Adjust this value accordingly
+    
+    const slideAnimation = document.styleSheets[0].rules[0];
+    slideAnimation.deleteRule(0);
+    slideAnimation.insertRule(`@keyframes slide { 0% { transform: translateX(0); } 100% { transform: translateX(-${100 / slideCount}%); } }`, 0);
+    slideContainer.style.animation = `slide ${animationDuration}s linear infinite`;
+    </script>
+
+
+<!-------restaurant part 2------>
+
+<section class="restaurant" id="restaurant1">
+    <div class="restaurant-info">
+      <h2>CHEERS PUB</h2><br><br>
+      <img src="images/cheerspub.png" alt="cheerspub"><br><br>
+      <p>Discover the essence of culinary craft and the allure of fine
+          spirits at cheerspub,where the art of dining is elevated to a realm of pure indulgence.</p>
+      <a href="menu1.html" class="menu-link">View Menu</a>
+    </div>
+  </section>
+  
+  <section class="restaurant" id="restaurant2">
+    <div class="restaurant-info">
+      <h2>LONG FENG</h2><br><br>
+      <img src="images/longefng.png" alt="LongFeng"><br><br>
+      <p>Welcome to the LongFeng, a sanctuary of elegance where the rich tapestry of Chinese cuisine
+       is woven with the threads of luxury. Step into a realm where traditional flavors meet modern sophistication,
+      and every dish is a masterpiece that tells a story of centuries-old culinary heritage.</p>
+      <a href="menu2.html" class="menu-link">View Menu</a>
+    </div>
+  </section>
+  
+  <section class="restaurant" id="restaurant3">
+    <div class="restaurant-info">
+      <h2>NOODLES</h2><br><br>
+      <img src="images/noodlesgrand.png" alt="Noodles"><br><br>
+      <p>Indulge in a meticulously curated selection of noodle dishes that pay homage to culinary 
+      traditions from around the world. From the velvety strands of our hand-pulled noodles to the 
+      delicate perfection of our rice noodles, each dish is a celebration of texture, taste, and creativity.</p>
+      <a href="menu3.html" class="menu-link">View Menu</a>
+    </div>
+  </section>
+  
+  <script src="script.js"></script>
+  
+   <!------Hotel Booking----->
+  <div class="booking-form">
+      <h2>Hotel Booking Form</h2>
+      <form id="booking-form">
+        <div class="input-container">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-container">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="date-input-container">
+          <div class="input-container">
+            <label for="check-in">Check-in Date</label>
+            <input type="date" id="check-in" name="check-in" required>
+          </div>
+          <div class="input-container">
+            <label for="check-out">Check-out Date</label>
+            <input type="date" id="check-out" name="check-out" required>
+          </div>
+        </div>
+        <button type="submit">Book Now</button>
+      </form>
+    </div>
+    <script src="script.js">
+  // script.js
+  document.getElementById('booking-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+  
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const checkIn = document.getElementById('check-in').value;
+    const checkOut = document.getElementById('check-out').value;
+  
+    // Process or display the booking details
+    const bookingDetails = `
+      Name: ${name}
+      Email: ${email}
+      Check-in: ${checkIn}
+      Check-out: ${checkOut}
+    `;
+  
+    alert('Booking successful!\n\n' + bookingDetails);
+  });
+    </script> <!-- Link to your JavaScript file -->
+  </div>
+  </section>
+  
+      <!----JavaScript for toggle Menu-->
+      <script>
+  
+      var naveLinks = document.getElementById(:naveLinks);
+  
+      function showMenu(){
+          naveLinks.style.right ="0"
+      }
+  
+      function showMenu(){
+          naveLinks.style.right ="-200px"
+      }
+  
+      </script>
+
+</div>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>Your Hotel is a luxurious and tranquil haven, nestled in the heart of breathtaking landscapes. Our commitment to elegance, comfort, and top-tier service ensures an unforgettable experience for every guest.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: Paradise@yourhotel.com</p>
+            <p>Phone: +94-526-7690</p>
+            <p>Address: 1234 vax wall Street, Union place</p>
+        </div>
+        <div class="footer-section">
+            <h3>Connect with Us</h3>
+            <ul class="social-icons">
+                <li><a href="#"><img src="images/facebook-icon.png.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="images/twitter-icon.png.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="images/instagram-icon.png.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; ParadiseHotel2023</p>
+    </div>
+</footer>
+</body>
+</html>
+
+

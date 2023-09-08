@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.restaurant-menu-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+}
+
+.menu-item {
+  flex: 0 0 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  transition: transform 0.5s;
+}
+
+.menu-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu-item h3 {
+  margin-top: 10px;
+}
+
+.menu-item p {
+  margin-top: 5px;
+  color: #777;
+}
+
+@keyframes carousel-slide {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  33.33% {
+    transform: translateX(-100%);
+  }
+  66.66% {
+    transform: translateX(-200%);
+  }
+}
+
+.carousel {
+  animation: carousel-slide 15s linear infinite;
+}
+
+    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Menu Carousel</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="restaurant-menu-carousel">
+  <div class="carousel">
+    <div class="menu-item">
+      <img src="dish1.jpg" alt="Dish 1">
+      <h3>Dish 1</h3>
+      <p>Description of Dish 1.</p>
+    </div>
+    <div class="menu-item">
+      <img src="dish2.jpg" alt="Dish 2">
+      <h3>Dish 2</h3>
+      <p>Description of Dish 2.</p>
+    </div>
+    <div class="menu-item">
+      <img src="dish3.jpg" alt="Dish 3">
+      <h3>Dish 3</h3>
+      <p>Description of Dish 3.</p>
+    </div>
+  </div>
+</div>
+<script src="script.js">document.addEventListener("DOMContentLoaded", function () {
+    const carousel = document.querySelector(".carousel");
+    const menuItems = carousel.querySelectorAll(".menu-item");
+    let slideIndex = 0;
+  
+    function showSlides() {
+      menuItems.forEach((menuItem, index) => {
+        menuItem.style.transform = `translateX(-${slideIndex * 100}%)`;
+        if (index === slideIndex) {
+          menuItem.querySelector("h3").style.opacity = 1;
+        } else {
+          menuItem.querySelector("h3").style.opacity = 0;
+        }
+      });
+  
+      slideIndex = (slideIndex + 1) % menuItems.length;
+      setTimeout(showSlides, 5000); // Change slide every 5 seconds
+    }
+  
+    showSlides();
+  });
+  
+  </script>
+</body>
+</html>
